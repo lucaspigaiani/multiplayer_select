@@ -8,6 +8,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 {
     void Start()
     {
+        PhotonNetwork.NickName = "Player" + Random.Range(1,1000);
         PhotonNetwork.ConnectUsingSettings();
     }
 
